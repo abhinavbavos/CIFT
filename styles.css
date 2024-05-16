@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.overlay-text p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.overlay-text .prediction {
+    font-weight: bold;
+}
+
+.overlay-text .extremely-fresh {
+    color: #008000; /* Green color */
+}
+
+.overlay-text .highlight {
+    font-weight: bold;
+    color: #0000FF; /* Blue color */
+}
